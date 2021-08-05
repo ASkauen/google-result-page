@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: repeat(5, auto);
   font-family: Arial;
 }
 
@@ -14,7 +14,8 @@ body {
 .header-top {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  align-items: center
+  align-items: center;
+  height: 100px;
 }
 
 .header-bottom {
@@ -58,10 +59,16 @@ body {
 .vert-line {
   border-left: 1px solid rgba(153, 153, 153, 0.521);
   height: 30px;
+  display: none;
 }
 
 .clear-icon {
   margin-top: 3px;
+  display: none;
+}
+
+input:{
+  background-color: red;
 }
 
 .menus {
@@ -111,6 +118,12 @@ div.header-bottom > a > img {
   cursor: pointer;
 }
 
+.results {
+  margin-left: 190px;
+  font-size: 14px;
+  color: #70757A;
+}
+
 .link-section {
   display: grid;
   grid-template-rows: repeat(15, auto);
@@ -127,7 +140,7 @@ div.header-bottom > a > img {
   grid-template-rows: repeat(4, auto);
   width: 600px;
   margin-left: 190px;
-  padding: 10px 0px;
+  padding: 15px 0px;
   align-items: center;
   /* border: 1px solid black; */
 }
@@ -219,6 +232,82 @@ div.header-bottom > a > img {
 .top-tag-desc {
   margin: 2px 0px 20px 0px;
   font-size: 14px;
+}
+
+.videos {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  margin-left: 190px;
+}
+
+.videos-title {
+  font-size: 22px;
+  width: 600px;
+  margin-bottom: 10px;
+}
+
+.thumbnail {
+  width: 130px;
+  border-radius: 7px;
+}
+
+div.videos-title > img {
+  float: left;
+  margin-right: 10px;
+}
+
+.videos-content {
+  display: grid;
+  grid-template-columns: min-content auto;
+  width: 600px;;
+  border-top: 1px solid rgb(218, 218, 218);
+  padding: 10px 0px
+}
+
+.videos-desc {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  /* border: 1px solid black; */
+  margin-left: 20px;
+}
+
+div.videos-desc > a {
+  margin: 0px;
+  font-size: 16px;
+  align-self: start;
+  text-decoration: none;
+}
+
+.see-all {
+  border: 1px solid rgb(219, 219, 219);
+  width: 250px;
+  height: 35px;
+  margin-left: 175px;
+  border-radius: 50vmin;
+  background-color: white;
+
+}
+
+.see-all:hover {
+  cursor: pointer;
+  background-color:rgb(248, 248, 248)
+}
+
+.videos-bottom-line {
+  border-bottom: 1px solid rgb(218, 218, 218);
+  padding-bottom: 30px;
+  margin-bottom: -18px;
+}
+
+.channel::before {
+  content: "YouTube · ";
+  color: black;
+}
+
+div.videos-desc > p {
+  margin: 0px;
+  font-size: 14px;
+  color: #70757A;
 }
 
 .ad::before {
