@@ -310,6 +310,57 @@ div.videos-desc > p {
   color: #70757A;
 }
 
+.other-qs-title {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.other-qs {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  width: 600px;
+  margin-left: 190px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.other-qs-q {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-top: 1px solid rgb(230, 230, 230);
+  align-items: center;
+}
+
+div.other-qs > a {
+  color: #202124;
+  text-decoration: none;
+}
+
+.other-qs-q-text {
+  margin: 10px 0px;
+  font-size: medium;
+  font-weight: normal;
+}
+
+.other-qs-q-last {
+  border-top: none;
+}
+
+.line {
+  border-bottom: 1px solid rgb(230, 230, 230);
+  margin-right: 10px;
+}
+
+div.other-qs-q > a {
+  font-size: 12px;
+  color: #70757a;
+  text-decoration: none;
+}
+
+div.other-qs-q > a:hover {
+  text-decoration: underline;
+}
+
 .ad::before {
   font-weight: bold;
   content: "Annonse · "
